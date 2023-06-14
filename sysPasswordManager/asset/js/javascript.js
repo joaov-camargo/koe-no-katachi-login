@@ -21,16 +21,18 @@ function tocar() {
   pauseMusic();
 }
 
-setInterval(function trocarFundo() {
-  let randomImg = Math.floor(Math.random() * 4);
-  if (randomImg == 0) {
-    randomImg = 1;
-  }
-  console.log(randomImg);
-  let coverIMG = document.getElementById("image-cover");
-  coverIMG.style.background =
-    "url('./asset/imgs/cover/wallpaper-0" +
-    randomImg +
-    ".jpg') no-repeat center";
-  coverIMG.style.backgroundSize = "cover";
-}, 2000);
+setInterval(function trocarFundo()
+{
+    var randomImg = Math.floor(Math.random()*4);
+    if(randomImg ==0){randomImg=1}
+    var coverIMG = document.getElementById("image-cover");
+    var downloadImg = document.getElementById('downloadImg');
+
+    // Imagem dinâmica
+    coverIMG.style.background = "url('./asset/imgs/cover/wallpaper-0"+randomImg+".jpg') no-repeat center"
+    coverIMG.style.backgroundSize = "cover"
+    coverIMG.style.transition = "1.5s"
+
+    // Download dinâmico
+    downloadImg.setAttribute('href',"./asset/imgs/cover/wallpaper-0"+randomImg+".jpg")
+},5000)
