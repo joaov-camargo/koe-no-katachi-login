@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body,.h-100{
+    width: 100vw;
+    height: 100vh;
+}
+
+.row:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.login {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed black;
+    gap: 20px;
+}
+
+.img-login{
+   width: 100%;
+}
+
+.form-login {
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 15px
+
+}
+
+#form-login  {
+    width: 100%;
+}
+
+#form-login > * {
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0px 20px 0px;
+}
+
+#submit {
+    margin-top: 100px;
+}
+/* C - O - V - E - R */
+.cover {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.image-cover{
+    width: 100%;
+    height: 100%;
+    background: url('../imgs/cover/wallpaper-04.jpg') no-repeat center;
+    background-size: cover;
+}
+.cover>img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 30px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 10px;
+    padding: 0px 30px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+}
+
+.footer > .sound {
+    padding: 2px;
+    background: transparent;
+    border: none;
+}
+
+.footer > .sound:hover {
+    border-radius: 7px;
+    background: transparent;
+    border: 1px solid red;
+}
