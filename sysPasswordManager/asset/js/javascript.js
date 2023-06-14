@@ -21,7 +21,7 @@ function tocar() {
   pauseMusic();
 }
 
-setInterval(function trocarFundo()
+/*setInterval(function trocarFundo()
 {
     var randomImg = Math.floor(Math.random()*4);
     if(randomImg ==0){randomImg=1}
@@ -35,4 +35,4 @@ setInterval(function trocarFundo()
 
     // Download dinâmico
     downloadImg.setAttribute('href',"./asset/imgs/cover/wallpaper-0"+randomImg+".jpg")
-},5000)
+},5000)*/
